@@ -1,23 +1,23 @@
-@import 'grid';
+@import "grid";
 
 /* ----------------------------------------- */
 /*  Globals                                  */
 /* ----------------------------------------- */
 @font-face {
-  font-family: 'Book Antiqua';
-  src: url('fonts/Book-Antiqua.otf');
+  font-family: "Book Antiqua";
+  src: url("fonts/Book-Antiqua.otf");
 }
 
 @font-face {
-  font-family: 'DuvallSmallCaps';
-  src: url('fonts/DuvallSmallCaps.otf');
+  font-family: "DuvallSmallCaps";
+  src: url("fonts/DuvallSmallCaps.otf");
 }
 
 /* Common style elements */
 $border-style: 2px groove #eeede0;
 
-$book-antiqua: 'Book Antiqua', 'Palatino Linotype', serif;
-$duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
+$book-antiqua: "Book Antiqua", "Palatino Linotype", serif;
+$duvall: "DuvallSmallCaps", "Palatino Linotype", serif;
 
 .dcc .window-content {
   font-family: $book-antiqua;
@@ -48,7 +48,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
   line-height: 1.5em;
 }
 
-.journal-sheet form input[name='name'] {
+.journal-sheet form input[name="name"] {
   font-family: $duvall;
 }
 
@@ -219,7 +219,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
     text-align: left;
 
     .attack-bonus-button {
-      background-image: url('./images/game-icons-net/d4-black.svg');
+      background-image: url("./images/game-icons-net/d4-black.svg");
       background-repeat: no-repeat;
       background-size: 22px 22px;
       display: inline-block;
@@ -278,7 +278,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 /* ----------------------------------------- */
 
 .dcc .armor-heading {
-  background-image: url('./images/gauntlet.png');
+  background-image: url("./images/gauntlet.png");
   background-position-x: 70px;
   background-repeat: no-repeat;
   background-size: 55px 17px;
@@ -351,7 +351,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 /* ----------------------------------------- */
 
 .dcc .ac {
-  background-image: url('./images/shield.png');
+  background-image: url("./images/shield.png");
   background-repeat: no-repeat;
   background-size: 60px 76px;
   flex: 0 0 60px;
@@ -372,7 +372,6 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
   margin: 21px auto 0;
   width: 35px;
 }
-
 
 /* ----------------------------------------- */
 /*  Chat Rolls                               */
@@ -503,7 +502,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 /* ----------------------------------------- */
 
 .dcc .hp {
-  background-image: url('./images/heart.png');
+  background-image: url("./images/heart.png");
   background-position-y: 9px;
   background-repeat: no-repeat;
   background-size: 80px 75px;
@@ -698,7 +697,6 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
   overflow-y: auto;
 }
 
-
 /* ----------------------------------------- */
 /*  Weapons                                  */
 /* ----------------------------------------- */
@@ -708,7 +706,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .weapons-heading {
-  background-image: url('./images/axe.png');
+  background-image: url("./images/axe.png");
   background-position-x: 155px;
   background-repeat: no-repeat;
   background-size: 90px 18px;
@@ -721,7 +719,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .weapons-heading.ranged {
-  background-image: url('./images/bow.png');
+  background-image: url("./images/bow.png");
   background-position-x: 165px;
   background-size: 90px 17px;
 }
@@ -756,7 +754,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .weapon-button {
-  background-image: url('../../../icons/svg/d20-black.svg');
+  background-image: url("../../../icons/svg/d20-black.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   flex: 0 0 30px;
@@ -773,7 +771,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .backstab-button {
-  background-image: url('./images/backstab.png');
+  background-image: url("./images/backstab.png");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   flex: 0 0 30px;
@@ -781,7 +779,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .roll-button {
-  background-image: url('../../../icons/svg/d20-black.svg');
+  background-image: url("../../../icons/svg/d20-black.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   flex: 0 0 30px;
@@ -789,7 +787,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .left-arrow-button {
-  background-image: url('./images/left-arrow.png');
+  background-image: url("./images/left-arrow.png");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   flex: 0 0 30px;
@@ -797,7 +795,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
 }
 
 .dcc .right-arrow-button {
-  background-image: url('./images/right-arrow.png');
+  background-image: url("./images/right-arrow.png");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   flex: 0 0 30px;
@@ -1227,7 +1225,7 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
   }
 
   .spell-item-button {
-    background-image: url('../../../icons/svg/d20-black.svg');
+    background-image: url("../../../icons/svg/d20-black.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 22px 22px;
@@ -1366,7 +1364,10 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
   .sheet-body.spell {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60px minmax(80px, auto) repeat(auto-fit, minmax(130px, auto));
+    grid-template-rows: 60px minmax(80px, auto) repeat(
+        auto-fit,
+        minmax(130px, auto)
+      );
     width: 100%;
   }
 
@@ -1422,19 +1423,28 @@ $duvall: 'DuvallSmallCaps', 'Palatino Linotype', serif;
     .armor-header-extras {
       display: grid;
       grid-column: 1 / span 3;
-      grid-template-columns: minmax(90px, auto) minmax(120px, auto) minmax(90px, auto) minmax(60px, auto);
+      grid-template-columns: minmax(90px, auto) minmax(120px, auto) minmax(
+          90px,
+          auto
+        ) minmax(60px, auto);
     }
 
     .weapon-header-basics {
       display: grid;
       grid-column: 1 / span 3;
-      grid-template-columns: minmax(115px, auto) minmax(125px, auto) minmax(100px, auto) minmax(150px, auto);
+      grid-template-columns: minmax(115px, auto) minmax(125px, auto) minmax(
+          100px,
+          auto
+        ) minmax(150px, auto);
     }
 
     .weapon-header-extras {
       display: grid;
       grid-column: 1 / span 3;
-      grid-template-columns: minmax(125px, auto) minmax(115px, auto) minmax(100px, auto) minmax(150px, auto);
+      grid-template-columns: minmax(125px, auto) minmax(115px, auto) minmax(
+          100px,
+          auto
+        ) minmax(150px, auto);
     }
 
     .weapon-summary {

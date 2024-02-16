@@ -4,7 +4,7 @@
  * DCC specific character sheet overrides
  */
 
-import DCCActorSheet from './actor-sheet.js'
+import DCCActorSheet from "./actor-sheet.js";
 
 /**
  * Extend the zero-level/NPC sheet for a Cleric
@@ -12,21 +12,21 @@ import DCCActorSheet from './actor-sheet.js'
  */
 class DCCActorSheetCleric extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-cleric.html'
-    data.system.class.className = game.i18n.localize('DCC.Cleric')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-cleric.html";
+    data.system.class.className = game.i18n.localize("DCC.Cleric");
 
-    if (data.system.details.sheetClass !== 'Cleric') {
+    if (data.system.details.sheetClass !== "Cleric") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Cleric'),
-        'data.details.sheetClass': 'Cleric',
-        'data.class.spellCheckAbility': 'per',
-        'data.details.critRange': 20
-      })
+        "data.class.className": game.i18n.localize("DCC.Cleric"),
+        "data.details.sheetClass": "Cleric",
+        "data.class.spellCheckAbility": "per",
+        "data.details.critRange": 20,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -36,22 +36,22 @@ class DCCActorSheetCleric extends DCCActorSheet {
  */
 class DCCActorSheetThief extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-thief.html'
-    data.system.class.className = game.i18n.localize('DCC.Thief')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-thief.html";
+    data.system.class.className = game.i18n.localize("DCC.Thief");
 
-    if (data.system.details.sheetClass !== 'Thief') {
+    if (data.system.details.sheetClass !== "Thief") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Thief'),
-        'data.details.sheetClass': 'Thief',
-        'data.details.critRange': 20,
-        'data.class.disapproval': 1,
-        'data.details.showBackstab': true
-      })
+        "data.class.className": game.i18n.localize("DCC.Thief"),
+        "data.details.sheetClass": "Thief",
+        "data.details.critRange": 20,
+        "data.class.disapproval": 1,
+        "data.details.showBackstab": true,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -61,21 +61,21 @@ class DCCActorSheetThief extends DCCActorSheet {
  */
 class DCCActorSheetHalfling extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-halfling.html'
-    data.system.class.className = game.i18n.localize('DCC.Halfling')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-halfling.html";
+    data.system.class.className = game.i18n.localize("DCC.Halfling");
 
-    if (data.system.details.sheetClass !== 'Halfling') {
+    if (data.system.details.sheetClass !== "Halfling") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Halfling'),
-        'data.details.sheetClass': 'Halfling',
-        'data.details.critRange': 20,
-        'data.class.disapproval': 1
-      })
+        "data.class.className": game.i18n.localize("DCC.Halfling"),
+        "data.details.sheetClass": "Halfling",
+        "data.details.critRange": 20,
+        "data.class.disapproval": 1,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -85,21 +85,21 @@ class DCCActorSheetHalfling extends DCCActorSheet {
  */
 class DCCActorSheetWarrior extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-warrior.html'
-    data.system.class.className = game.i18n.localize('DCC.Warrior')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-warrior.html";
+    data.system.class.className = game.i18n.localize("DCC.Warrior");
 
-    if (data.system.details.sheetClass !== 'Warrior') {
+    if (data.system.details.sheetClass !== "Warrior") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Warrior'),
-        'data.details.sheetClass': 'Warrior',
-        'data.class.disapproval': 1,
-        'data.config.attackBonusMode': 'manual'
-      })
+        "data.class.className": game.i18n.localize("DCC.Warrior"),
+        "data.details.sheetClass": "Warrior",
+        "data.class.disapproval": 1,
+        "data.config.attackBonusMode": "manual",
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -109,22 +109,22 @@ class DCCActorSheetWarrior extends DCCActorSheet {
  */
 class DCCActorSheetWizard extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-wizard.html'
-    data.system.class.className = game.i18n.localize('DCC.Wizard')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-wizard.html";
+    data.system.class.className = game.i18n.localize("DCC.Wizard");
 
-    if (data.system.details.sheetClass !== 'Wizard') {
+    if (data.system.details.sheetClass !== "Wizard") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Wizard'),
-        'data.details.sheetClass': 'Wizard',
-        'data.class.spellCheckAbility': 'int',
-        'data.details.critRange': 20,
-        'data.class.disapproval': 1
-      })
+        "data.class.className": game.i18n.localize("DCC.Wizard"),
+        "data.details.sheetClass": "Wizard",
+        "data.class.spellCheckAbility": "int",
+        "data.details.critRange": 20,
+        "data.class.disapproval": 1,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -134,22 +134,22 @@ class DCCActorSheetWizard extends DCCActorSheet {
  */
 class DCCActorSheetDwarf extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-dwarf.html'
-    data.system.class.className = game.i18n.localize('DCC.Dwarf')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-dwarf.html";
+    data.system.class.className = game.i18n.localize("DCC.Dwarf");
 
-    if (data.system.details.sheetClass !== 'Dwarf') {
+    if (data.system.details.sheetClass !== "Dwarf") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Dwarf'),
-        'data.details.sheetClass': 'Dwarf',
-        'data.class.disapproval': 1,
-        'data.config.attackBonusMode': 'manual',
-        'data.skills.shieldBash.useDeed': true
-      })
+        "data.class.className": game.i18n.localize("DCC.Dwarf"),
+        "data.details.sheetClass": "Dwarf",
+        "data.class.disapproval": 1,
+        "data.config.attackBonusMode": "manual",
+        "data.skills.shieldBash.useDeed": true,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -159,22 +159,22 @@ class DCCActorSheetDwarf extends DCCActorSheet {
  */
 class DCCActorSheetElf extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-elf.html'
-    data.system.class.className = game.i18n.localize('DCC.Elf')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template = "systems/dcc/templates/actor-sheet-elf.html";
+    data.system.class.className = game.i18n.localize("DCC.Elf");
 
-    if (data.system.details.sheetClass !== 'Elf') {
+    if (data.system.details.sheetClass !== "Elf") {
       this.actor.update({
-        'data.class.className': game.i18n.localize('DCC.Elf'),
-        'data.details.sheetClass': 'Elf',
-        'data.class.spellCheckAbility': 'int',
-        'data.details.critRange': 20,
-        'data.class.disapproval': 1
-      })
+        "data.class.className": game.i18n.localize("DCC.Elf"),
+        "data.details.sheetClass": "Elf",
+        "data.class.spellCheckAbility": "int",
+        "data.details.critRange": 20,
+        "data.class.disapproval": 1,
+      });
     }
 
-    return data
+    return data;
   }
 }
 
@@ -184,16 +184,37 @@ class DCCActorSheetElf extends DCCActorSheet {
  */
 class DCCActorSheetGeneric extends DCCActorSheet {
   /** @override */
-  async getData (options) {
-    const data = await super.getData(options)
-    this.options.template = 'systems/dcc/templates/actor-sheet-upper-level.html'
-    data.system.class.className = game.i18n.localize('DCC.Generic')
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template =
+      "systems/dcc/templates/actor-sheet-upper-level.html";
+    data.system.class.className = game.i18n.localize("DCC.Generic");
 
     this.actor.update({
-      'data.class.className': game.i18n.localize('DCC.Generic')
-    })
+      "data.class.className": game.i18n.localize("DCC.Generic"),
+    });
 
-    return data
+    return data;
+  }
+}
+
+/**
+ * Extend the zero-level/NPC sheet for a generic upper level character
+ * @extends {DCCActorSheet}
+ */
+class DCCActorSheetInventory extends DCCActorSheet {
+  /** @override */
+  async getData(options) {
+    const data = await super.getData(options);
+    this.options.template =
+      "systems/dcc/templates/actor-sheet-inventory-only.html";
+    data.system.class.className = game.i18n.localize("DCC.InventorySheet");
+
+    this.actor.update({
+      "data.class.className": game.i18n.localize("DCC.InventorySheet"),
+    });
+
+    return data;
   }
 }
 
@@ -205,5 +226,6 @@ export {
   DCCActorSheetWizard,
   DCCActorSheetDwarf,
   DCCActorSheetElf,
-  DCCActorSheetGeneric
-}
+  DCCActorSheetGeneric,
+  DCCActorSheetInventory,
+};

@@ -1,0 +1,60 @@
+<script>
+  // Select input field text contents on click
+  $("input").on("mouseup", function () {
+    $(this).focus().select();
+  });
+</script>
+
+<form class="{{cssClass}}" autocomplete="off">
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range
+  --}}
+  <input
+    type="hidden"
+    id="system.details.sheetClass"
+    name="system.details.sheetClass"
+    value="Unknown"
+    data-dtype="String" />
+  <input
+    type="hidden"
+    id="system.details.critRange"
+    name="system.details.critRange"
+    value="20"
+    data-dtype="Number" />
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <div class="profile-div">
+      <img
+        class="profile-img"
+        src="{{actor.img}}"
+        data-edit="img"
+        title="{{actor.name}}"
+        height="75"
+        width="75"
+        alt="{{localize 'Character Portrait'}}'" />
+    </div>
+    <!-- <div class="upper-level flexrow"> -->
+    <div class="charname flexrow">
+      <h1 class="charname">
+        <input
+          name="name"
+          type="text"
+          value="{{actor.name}}"
+          placeholder="{{localize 'DCC.CharacterName'}}" />
+      </h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="equipment">{{localize "DCC.Equipment"}}</a>
+    <a class="item" data-tab="notes">{{localize "DCC.Notes"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Equipment Tab --}} {{>
+    systems/dcc/templates/actor-partial-pc-equipment.html }} {{!-- Notes Tab
+    --}} {{> systems/dcc/templates/actor-partial-pc-notes.html }}
+  </section>
+</form>
